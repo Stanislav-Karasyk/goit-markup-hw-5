@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>hw-4-studio</title>
+        <title>hw-5-studio</title>
         <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
             rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css" />
@@ -20,9 +20,9 @@
                         <span class="logo-web">Web</span><span class="logo-studio">Studio</span>
                     </a>
                     <ul class="site-nav-list list">
-                        <li class="site-nav-list-item"><a href="./index.html" class="link current">Студия</a></li>
-                        <li class="site-nav-list-item"><a href="./portfolio.html" class="link">Портфолио</a></li>
-                        <li class="site-nav-list-item"><a href="" class="link">Контакты</a></li>
+                        <li class="site-nav-list-item"><a href="./index.html" class="site-nav-link current">Студия</a></li>
+                        <li class="site-nav-list-item"><a href="./portfolio.html" class="site-nav-link">Портфолио</a></li>
+                        <li class="site-nav-list-item"><a href="" class="site-nav-link">Контакты</a></li>
                     </ul>
                 </nav>
                 <!-- ссылки на почти и телефон -->
@@ -106,9 +106,18 @@
                 <div class="container">
                     <h2 class="activity-title">Чем мы занимаемся</h2>
                     <ul class="activity-list list">
-                        <li><img src="./images/1.jpg" alt="пример деятельности один" width="370"></li>
-                        <li><img src="./images/2.jpg" alt="пример деятельности два" width="370"></li>
-                        <li><img src="./images/3.jpg" alt="пример деятельности три" width="370"></li>
+                        <li class="activity-item">
+                            <h3 class="activity-name">Десктопные приложения</h3>
+                            <img src="./images/1.jpg" alt="пример деятельности один" width="370">
+                        </li>
+                        <li class="activity-item-2">
+                            <h3 class="activity-name name-2">Мобильные приложения</h3>
+                            <img src="./images/2.jpg" alt="пример деятельности два" width="370">
+                        </li>
+                        <li class="activity-item-3">
+                            <h3 class="activity-name name-3">Дизайнерские решения</h3>
+                            <img src="./images/3.jpg" alt="пример деятельности три" width="370">
+                        </li>
                     </ul>
                 </div>
             </section>
@@ -330,7 +339,14 @@
                     </ul>
                 </div>
             </div>
-            
         </footer>
+
+        <!-- BACKDROP -->
+        <div class="backdrop is-hidden" data-modal>
+            <div class="modal">
+                <button type="button" class="modal-close-btn" data-modal-close>X</button>
+            </div>
+        </div>
+
     </body>
 </html>
